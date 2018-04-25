@@ -20,6 +20,9 @@ public class PriorityMessageQueue {
 		int priority = message.getPriority();
 		priorityList.get(priority).add(message);
 	}
+	
+	
+	public void process()
 
 	public static void main(String[] args) {
 

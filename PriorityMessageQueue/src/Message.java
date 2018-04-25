@@ -1,10 +1,14 @@
+import java.util.Random;
+
 
 public class Message implements Comparable{
 	public int priority;
 	public int arrival;
+	public  Random random = new Random(1000);
 	
-	public Message(int priority, int arrival) {
-		this.priority = priority;
+	public Message(int arrival) {
+		
+		this.priority = random.nextInt(5);
 		this.arrival = arrival;
 	}
 	
