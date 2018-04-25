@@ -4,7 +4,7 @@ import java.util.Random;
 public class Message implements Comparable{
 	public int priority;
 	public int arrival;
-	public  Random random = new Random(1000);
+	public Random random = new Random();
 	
 	public Message(int arrival) {
 		
