@@ -1,9 +1,10 @@
 import java.util.Random;
 
 
-public class Message implements Comparable{
+public class Message  {
 	public int priority;
 	public int arrival;
+	public int departed;
 	public Random random = new Random();
 	
 	public Message(int arrival) {
@@ -19,12 +20,14 @@ public class Message implements Comparable{
 	public int getArrival() {
 		return arrival;
 	}
-	@Override
-	public int compareTo(Object message) {
-		return priority - ((Message) message).getPriority();
-		
-		
+	public int getDeparted() {
+		return departed;
 	}
+	public void setDeparted(int time) {
+		departed = time;
+	}
+	
+	
 	
 
 	
